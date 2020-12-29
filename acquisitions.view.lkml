@@ -1,7 +1,7 @@
 view: acquisitions {
   dimension: acquired_by {
     type: string
-    sql: ${TABLE}.acquired_by ;;
+    sql: ${TABLE}.acquired_by_permalink ;;
   }
 
   dimension: currency {
