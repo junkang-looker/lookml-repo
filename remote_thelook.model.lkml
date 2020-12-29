@@ -1,4 +1,4 @@
-connection: "myremote_thelook"
+connection: "thelook"
 
 # include all the views
 include: "*.view"
