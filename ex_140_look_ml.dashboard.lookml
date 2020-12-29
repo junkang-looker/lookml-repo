@@ -5,14 +5,14 @@
   - name: frankenstein
     title: frankenstein
     merged_queries:
-    - model: thelook
+    - model: myremote_thelook
       explore: order_items
       type: table
       fields: [users.id, users.country, users.count, users.gender]
       sorts: [users.count desc]
       limit: 500
       query_timezone: America/Los_Angeles
-    - model: thelook
+    - model: myremote_thelook
       explore: orders
       type: table
       fields: [users.id, users.last_name]
