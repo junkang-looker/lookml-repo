@@ -6,7 +6,8 @@ include: "*.view"
 # include all the dashboards
 include: "*.dashboard"
 
-explore: remote_inventory_items {
+explore: inventory_items {
+  label: "remote_inventory_items"
   join: products {
     type: left_outer
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
@@ -14,7 +15,8 @@ explore: remote_inventory_items {
   }
 }
 
-explore: remote_order_items {
+explore: order_items {
+  label: "remote_order_items"
   join: inventory_items {
     type: left_outer
     sql_on: ${order_items.inventory_item_id} = ${inventory_items.id} ;;
@@ -55,7 +57,8 @@ explore: remote_order_items {
 
 }
 
-explore: remote_orders {
+explore: orders {
+  label: "remote_orders"
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
