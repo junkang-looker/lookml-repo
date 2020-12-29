@@ -8,4 +8,8 @@ include: "acquisitions.view"
 
 explore: acquisitions {
   label: "remote_acquisitions"
+  query: acquisition_query {
+    dimensions: [acquisitions.acquired_by]
+    limit:  5
+  }
 }
