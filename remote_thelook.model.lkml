@@ -7,7 +7,7 @@ include: "acquisitions.view"
 # include: "*.dashboard"
 
 explore: acquisitions {
-  label: "remote acquisitions"
+  label: "Remote Acquisitions"
   query: acquisition_query {
     dimensions: [acquisitions.acquired_by]
     limit:  5
